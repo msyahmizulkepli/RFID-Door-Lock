@@ -13,16 +13,16 @@
 #include "addons/TokenHelper.h"
 #include "addons/RTDBHelper.h"
 
-#define WIFI_SSID "SyamZ"
-#define WIFI_PASSWORD "syamzterer"
-#define API_KEY "AIzaSyAU7P4nGmmSbQOPHgPxPe3Zqvi2U1f9Rhs"
-#define DATABASE_URL "https://rfid-139c7-default-rtdb.firebaseio.com/"
+#define WIFI_SSID "REPLACE_WITH_YOUR_SSID"
+#define WIFI_PASSWORD "REPLACE_WITH_YOUR_PASSWORD"
+#define API_KEY "REPLACE_WITH_YOUR_FIREBASE_PROJECT_API_KEY"
+#define DATABASE_URL "REPLACE_WITH_YOUR_FIREBASE_DATABASE_URL"
 
 FirebaseData fbdo;
 FirebaseAuth auth;
 FirebaseConfig config;
 
-const int MAXNOPEOPLE = 30;
+const int MAXNOPEOPLE = 30;// set max no of people in database to 30
 unsigned long senDataPrevMillis = 0;
 int count = 0;
 bool signupOK = false;
